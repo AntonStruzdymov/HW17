@@ -1,17 +1,17 @@
 ﻿static void File1()
 {
-    StreamReader fileReader = new StreamReader(@"C:\Users\Asus\Desktop\Антон\C#\1\HW17\HW17-2\File1.txt");
+    StreamReader fileReader = new StreamReader("File1.txt");
     var temp1 = fileReader.ReadToEnd();
-    StreamWriter fileWriter = new StreamWriter(@"C:\Users\Asus\Desktop\Антон\C#\1\HW17\HW17-2\ResultFile.txt", true);
+    StreamWriter fileWriter = new StreamWriter("ResultFile.txt", true);
     fileWriter.WriteLine(temp1);
     fileReader.Close();
     fileWriter.Close();
 }
 static void File2()
 {
-    StreamReader fileReader2 = new StreamReader(@"C:\Users\Asus\Desktop\Антон\C#\1\HW17\HW17-2\File2.txt");
+    StreamReader fileReader2 = new StreamReader("File2.txt");
     var temp2 = fileReader2.ReadToEnd();
-    StreamWriter fileWriter = new StreamWriter(@"C:\Users\Asus\Desktop\Антон\C#\1\HW17\HW17-2\ResultFile.txt", true);
+    StreamWriter fileWriter = new StreamWriter("ResultFile.txt", true);
     fileWriter.WriteLine(temp2);
     fileReader2.Close();
     fileWriter.Close();
